@@ -251,6 +251,10 @@ footer .footer-social ul li a:hover {
   color: #363638 !important;
 }
 
+footer .footer-social ul li:hover {
+  color: #363638 !important;
+}
+
 footer .texts ul a {
   font-weight: bold;
   text-decoration: none;
