@@ -251,7 +251,7 @@ footer .footer-social ul li a:hover {
   color: #363638 !important;
 }
 
-footer .footer-social ul:hover {
+footer .footer-social ul a:hover {
   color: #363638 !important;
 }
 
