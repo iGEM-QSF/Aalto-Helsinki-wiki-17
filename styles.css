@@ -1,0 +1,381 @@
+html, header, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    background-size: cover;
+  -webkit-font-smoothing: antialiased; /* font smoothing */
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', Work Sans; font-size:15px;
+}
+
+p {
+  padding-top: 5%;
+  padding-left: 29%;
+  padding-right: 29%; /* 58% in the middle */
+  text-align: center;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.some {
+  display: inline-block;
+  width: 35px;
+  vertical-align: middle;
+}
+
+p.porify {
+  padding-top: 10%;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(Adam.otf);
+}
+
+h1 span {
+  color: #000000;
+  padding: 10px;
+  font-size: larger;
+  text-shadow: 4px 2px gray;
+  text-shadow: 4px 2px rgba(0,0,0,0.5);
+}
+#dropdown {
+  position: relative;
+  height: 24px;
+  background: #ffffff;
+  width: auto;
+}
+#dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: auto; /*this was 0*/
+  /*text-align: center; this was added*/
+  line-height: 1;
+}
+#dropdown > ul {
+  position: relative;
+  display: block;
+  text-align: center; /*test, this was added*/
+  background: #ffffff; /*This is the heading1 background*/
+  width: 100%;
+  z-index: 500;
+}
+#dropdown:after,
+#dropdown > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#dropdown.align-right > ul > li {
+  float: right;
+}
+#dropdown.align-center ul {
+  text-align: center;
+}
+#dropdown.align-center ul ul {
+  text-align: center; /*this was left*/
+}
+#dropdown > ul > li {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#dropdown > ul > #menu-button {
+  display: none;
+}
+#dropdown ul li a {
+  display: block;
+  font-family: 'Quicksand', Work Sans;
+  src: url(Adam.otf);
+  font:weight: bold;
+  text-decoration: none;
+}
+#dropdown > ul > li > a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* this was added */
+  padding: 5px 45px; /* heading sizes */
+  color: #363638; /*previous color #7a8189;*/
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+#dropdown > ul > li.has-sub > a {
+  padding-right: 32px;
+}
+/*Dropdown parent links give different colours when hovered*/
+#dropdown > ul > li:hover > a.lab {
+  color: #339999;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.mod {
+  color: #CC9933;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.hp {
+  color: #CC6633;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.com {
+  color: #336699;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.peo {
+  color: #003333;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown li.has-sub::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#dropdown ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .25s ease;
+  -moz-transition: opacity .3s ease, top .25s ease;
+  -ms-transition: opacity .3s ease, top .25s ease;
+  -o-transition: opacity .3s ease, top .25s ease;
+  transition: opacity .3s ease, top .25s ease;
+  z-index: 1000;
+}
+#dropdown ul ul ul {
+  top: 37px;
+  padding-left: 5px;
+}
+#dropdown ul ul li {
+  position: relative;
+}
+/* This defines how much space between heading and drop down menu */
+#dropdown > ul > li:hover > ul {
+  width: 95%; /* this makes the dropdown menus widths 100% */
+  left: auto;
+  right: auto;
+  top: 31px; /*this was 44px -> too far away, 31px is right under */
+  opacity: 1;
+}
+#dropdown.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+  opacity: 1;
+}
+/*Specifies how the link opened by hovering dropdown looks*/
+#dropdown ul ul li:hover > ul {
+  left: 180px; /* how far from the dropdown menu the submenu opens */
+  top: 0;
+  opacity: 1;
+}
+#dropdown.align-right ul ul li:hover > ul {
+  left: auto;
+  /*right: 170px;*/
+  width: 100%; /*added*/
+  top: 0;
+  opacity: 1;
+  padding-right: 5px;
+}
+#dropdown ul ul li a {
+  /*width: 170px;*/
+  width: 100%; /*the width of the subelement of subheadings */
+  border-bottom: 1px solid #eeeeee; /* horiz. line colour */
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #363638; /* colour of the drop down menu subheadings */
+  background: #ffffff;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#dropdown.align-right ul ul li a {
+  text-align: center; /* this was right prev. */
+}
+
+#dropdown ul ul li:hover > a {
+  background: #f2f2f2; /* colour of dropdown menu links when hovered - light grey */
+  color: #363638;
+}
+
+#dropdown ul ul li:last-child > a,
+#dropdown ul ul li.last > a {
+  border-bottom: 0;
+}
+
+footer .footer-social {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #339999;
+}
+footer .footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-social ul li {
+  display: inline-block;
+}
+footer .footer-social ul li a {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+}
+footer .footer-social ul li a:hover {
+  color: #363638 !important;
+}
+
+footer .texts ul a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 30px;
+}
+
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #dropdown {
+    width: auto;
+  }
+  #dropdown.align-center ul {
+    text-align: center; /* this was left */
+  }
+  #dropdown.align-right > ul > li {
+    float: none;
+  }
+  #dropdown ul {
+    width: auto;
+  }
+  #dropdown .submenuArrow,
+  #dropdown #indicatorContainer {
+    display: none;
+  }
+  #dropdown > ul {
+    height: auto;
+    display: block;
+  }
+  #dropdown > ul > li {
+    float: none;
+  }
+  #dropdown li,
+  #dropdown > ul > li {
+    display: none;
+  }
+  #dropdown ul ul,
+  #dropdown ul ul ul,
+  #dropdown ul > li:hover > ul,
+  #dropdown ul ul > li:hover > ul,
+  #dropdown.align-right ul ul,
+  #dropdown.align-right ul ul ul,
+  #dropdown.align-right ul > li:hover > ul,
+  #dropdown.align-right ul ul > li:hover > ul {
+    position: relative;
+    width: 100%; /*added*/
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    right: auto;
+  }
+  #dropdown ul .has-sub::after {
+    display: none;
+  }
+  #dropdown ul li a {
+    padding: 12px 20px;
+  }
+  #dropdown ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 28px 35px;
+  }
+  #dropdown.align-right ul ul li a {
+    text-align: center; /*this was left*/
+  }
+  #dropdown ul ul li:hover > a.lab > a.mod {
+    background: none;
+    color: #363638;
+  }
+  #dropdown ul ul ul a {
+    padding: 8px 50px;
+  }
+  #dropdown ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #dropdown ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #dropdown ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #dropdown > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+  }
+  #dropdown #menu-button > a {
+    padding: 14px 20px;
+  }
+  #dropdown ul.open li,
+  #dropdown > ul.open > li {
+    display: block;
+  }
+  #dropdown > ul.open > li#menu-button > a {
+    color: #fff;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  }
+  #dropdown ul ul::after {
+    display: none;
+  }
+  #dropdown #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    border-bottom: 2px solid #7a8189;
+    right: 20px;
+    top: 0px; /* this was 15px */
+  }
+  #dropdown #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    right: 20px;
+    top: 0px; /*this was 25px*/
+  }
+  #dropdown ul.open #menu-button::after,
+  #dropdown ul.open #menu-button::before {
+    border-color: #fff;
+  }
+}
