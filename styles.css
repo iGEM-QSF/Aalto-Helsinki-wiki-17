@@ -102,7 +102,7 @@ h1 span {
   display: block;
   font-family: 'Quicksand', Work Sans;
   src: url(Adam.otf);
-  font:weight: bold;
+  font-weight: bold;
   text-decoration: none;
 }
 #dropdown > ul > li > a {
