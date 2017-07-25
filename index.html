@@ -103,7 +103,7 @@ Hello. Hello. Hello hello hello hello hello. Hello hello hello.<br>
 
 <script type="text/javascript">
 
-// doesn't work yet
+// works only by switching 1 image so far
 $("document").ready(function() {
 
   $('#dropdown>ul>li>a').hover(function() {
@@ -114,11 +114,16 @@ $("document").ready(function() {
     var target = $("img[alt^='Porifi']").attr('src');
     var newTarg = target.replace('-lab.png', '.png');
     $("img[alt^='Porifi']").attr("src", newTarg);
-    //$("img[alt^='Porifi']").attr('src').attr("src", newTarg);
 });
-  //$("img[alt^='Porifi']").hover(function() {
-    //$(this).replaceWith('<img src='../Aalto-Helsinki-wiki-17/Porifi-lab.png'>');
-  //});
+  $('#dropdown ul ul li a').hover(function() {
+    var target = $("img[alt^='Porifi']").attr('src');
+    var newTarg = target.replace('.png', '-lab.png');
+    $("img[alt^='Porifi']").attr("src", newTarg);
+}, function() {
+    var target = $("img[alt^='Porifi']").attr('src');
+    var newTarg = target.replace('-lab.png', '.png');
+    $("img[alt^='Porifi']").attr("src", newTarg);
+});
 
 });
 
