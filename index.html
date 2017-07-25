@@ -108,17 +108,17 @@ $("document").ready(function() {
 
   $('#dropdown>ul>li>a').hover(function() {
     var target = $("img[alt^='Porifi']").attr('src');
-    //console.log(target);
     var newTarg = target.replace('.png', '-lab.png');
-    $("img[alt^='Porifi']").attr('src').attr("src", newTarg);
+    $("img[alt^='Porifi']").attr("src", newTarg);
 }, function() {
     var target = $("img[alt^='Porifi']").attr('src');
     var newTarg = target.replace('-lab.png', '.png');
-    $("img[alt^='Porifi']").attr('src').attr("src", newTarg);
+    $("img[alt^='Porifi']").attr("src", newTarg);
+    //$("img[alt^='Porifi']").attr('src').attr("src", newTarg);
 });
-  $("img[alt^='Porifi']").hover(function() {
-    $(this).replaceWith('<img src='../Aalto-Helsinki-wiki-17/Porifi-lab.png'>');
-  });
+  //$("img[alt^='Porifi']").hover(function() {
+    //$(this).replaceWith('<img src='../Aalto-Helsinki-wiki-17/Porifi-lab.png'>');
+  //});
 
 });
 
