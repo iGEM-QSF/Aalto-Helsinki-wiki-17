@@ -33,6 +33,8 @@ img {
 
 .some:hover {
   content: url('https://igem-qsf.github.io/Aalto-Helsinki-wiki-17/logos-icons/home_icon_hover.png');
+  display: inline-block;
+  vertical-align: middle;
 }
 
 p.porify {
@@ -253,6 +255,7 @@ footer .footer-social ul li a {
 }
 footer .footer-social ul li a:hover {
   color: #363638 !important;
+  font-weight: bold;
 }
 
 footer .footer-social a:hover {
