@@ -42,6 +42,11 @@ p.porify {
   margin: auto;
 }
 
+#roll-o {
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
 @font-face {
   font-family: Quicksand;
   src: url(Adam.otf);
