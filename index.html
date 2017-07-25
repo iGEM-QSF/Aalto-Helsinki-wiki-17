@@ -106,7 +106,7 @@ Hello. Hello. Hello hello hello hello hello. Hello hello hello.<br>
 // doesn't work yet
 $("document").ready(function() {
 
-  $('#dropdown').find('li').hover(function() {
+  $('#dropdown>ul>li>a').hover(function() {
     var target = $("img[alt^='Porifi']").attr('src');
     //console.log(target);
     var newTarg = target.replace('.png', '-lab.png');
