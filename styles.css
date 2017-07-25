@@ -138,7 +138,7 @@ h1 span {
   border-bottom: 3px solid currentColor;
 }
 #dropdown > ul > li:hover > a.peo {
-  color: #003333;
+  color: #336633;
   border-bottom: 3px solid currentColor;
 }
 #dropdown li.has-sub::after {
