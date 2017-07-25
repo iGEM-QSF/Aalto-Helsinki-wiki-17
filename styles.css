@@ -45,6 +45,8 @@ p.porify {
 #roll-o {
   padding-top: 5%;
   padding-left: 10%;
+  max-height: 10%;
+  max-width: 10%;
 }
 
 @font-face {
