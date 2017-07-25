@@ -33,8 +33,6 @@ img {
 
 .some:hover {
   content: url('https://igem-qsf.github.io/Aalto-Helsinki-wiki-17/logos-icons/home_icon_hover.png');
-  display: inline-block;
-  vertical-align: middle;
 }
 
 p.porify {
