@@ -45,10 +45,11 @@ p.porify {
 #roll-o {
   padding-top: 5%;
   padding-left: 10%;
+  padding-right: 82%;
 }
 
 .o {
-  width: 10%;
+  width: 8%;
 }
 
 @font-face {
