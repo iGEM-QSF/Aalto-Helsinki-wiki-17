@@ -47,9 +47,8 @@ p.porify {
   padding-left: 10%;
 }
 
-img.o {
-  max-height: 10%;
-  max-width: 10%;
+.o {
+  width: 10%;
 }
 
 @font-face {
