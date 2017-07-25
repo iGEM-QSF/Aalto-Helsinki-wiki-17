@@ -97,32 +97,45 @@
 Hello. Hello. Hello hello hello hello hello. Hello hello hello.<br>
 </p>-->
 <p class='porify'>
-<img src="../Aalto-Helsinki-wiki-17/Porifi.png" alt="Porifi Main">
+<img src="../Aalto-Helsinki-wiki-17/Porifi.png" alt="Porifi Main"><br>
+<h1>Some catchy one-liner here!</h1>
 </p>
 <br>
 
+<!-- Rotating Porifi -->
 <script type="text/javascript">
-
 // works only by switching 1 image so far
 $("document").ready(function() {
 
-  $('#dropdown>ul>li>a').hover(function() {
-    var target = $("img[alt^='Porifi']").attr('src');
-    var newTarg = target.replace('.png', '-lab.png');
-    $("img[alt^='Porifi']").attr("src", newTarg);
+  var target = $("img[alt^='Porifi']").attr('src');
+  var labTarg = target.replace('.png', '-lab.png');
+  var modTarg = target.replace('.png', '-mod.png');
+  var hpTarg = target.replace('.png', '-hp.png');
+  var comTarg = target.replace('.png', '-community.png');
+  var peoTarg = target.replace('.png', '-people.png');
+  
+  $('#dropdown>ul>li>a.lab').hover(function() {
+    $("img[alt^='Porifi']").attr("src", labTarg);
 }, function() {
-    var target = $("img[alt^='Porifi']").attr('src');
-    var newTarg = target.replace('-lab.png', '.png');
-    $("img[alt^='Porifi']").attr("src", newTarg);
+    $("img[alt^='Porifi']").attr("src", labTarg);
 });
-  $('#dropdown ul ul li a').hover(function() {
-    var target = $("img[alt^='Porifi']").attr('src');
-    var newTarg = target.replace('.png', '-lab.png');
-    $("img[alt^='Porifi']").attr("src", newTarg);
+
+  $('#dropdown ul ul li a.lab').hover(function() {
+    $("img[alt^='Porifi']").attr("src", labTarg);
 }, function() {
-    var target = $("img[alt^='Porifi']").attr('src');
-    var newTarg = target.replace('-lab.png', '.png');
-    $("img[alt^='Porifi']").attr("src", newTarg);
+    $("img[alt^='Porifi']").attr("src", labTarg);
+});
+
+    $('#dropdown>ul>li>a.mod').hover(function() {
+    $("img[alt^='Porifi']").attr("src", modTarg);
+}, function() {
+    $("img[alt^='Porifi']").attr("src", modTarg);
+});
+
+  $('#dropdown ul ul li a.mod').hover(function() {
+    $("img[alt^='Porifi']").attr("src", modTarg);
+}, function() {
+    $("img[alt^='Porifi']").attr("src", modTarg);
 });
 
 });
