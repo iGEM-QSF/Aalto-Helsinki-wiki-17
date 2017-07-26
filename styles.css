@@ -45,8 +45,8 @@ p.porify {
 #roll-o {
     position: fixed; /* Sit on top of the page content */
     display: block; /* none: Hidden by default */
-    width: 20%; 
-    height: 21.68%;
+    width: 18%; 
+    height: 19.51%;
     top: 0; 
     left: 0;
     right: 0;
@@ -58,10 +58,8 @@ p.porify {
 
 .o {
   position: absolute;
-  top: 10% !important;
-  left: 15% !important;
-  width: 100%;
-  height: 100%;
+  top: 15% !important;
+  left: 18% !important;
 }
 
 @font-face {
