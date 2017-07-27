@@ -56,14 +56,14 @@ p.porify {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0);
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
     cursor: default;
 }
 
 .o {
-  position: absolute;
-  top: 15% !important;
-  left: 18% !important;
+  position: relative;
+  top: 110% !important;
+  left: 110% !important;
 }
 
 @font-face {
