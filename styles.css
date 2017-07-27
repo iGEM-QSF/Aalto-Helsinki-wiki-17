@@ -1,13 +1,17 @@
-html, header, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html {
+    position: relative;
+    min-height: 100%;
     text-align: center;
     background-color: white;
     background-size: cover;
   -webkit-font-smoothing: antialiased; /* font smoothing */
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Quicksand', Work Sans; font-size:15px;
+}
+
+header, body {
+    margin: 0 0 35px;
+    padding: 0;
 }
 
 p {
@@ -249,12 +253,12 @@ h1 span {
 }
 
 footer .footer-social {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: #339999;
+  overflow: hidden;
 }
 footer .footer-social ul {
   list-style: none;
