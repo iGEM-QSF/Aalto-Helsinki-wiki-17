@@ -73,6 +73,7 @@ p.porify {
   padding: 40px 20px;
   text-align: left;
   background-color: #339999;
+  overflow: hidden;
 }
 
 #color-block:hover {
