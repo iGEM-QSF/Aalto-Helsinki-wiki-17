@@ -257,6 +257,7 @@ footer .footer-social {
   width: 100%;
   text-align: center;
   padding: 5px 0;
+  bottom: 0;
   background-color: #339999;
   overflow: hidden;
 }
