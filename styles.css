@@ -16,8 +16,8 @@ header, body {
 
 p {
   padding-top: 1%;
-  padding-left: 29%;
-  padding-right: 29%; /* 58% in the middle */
+  padding-left: 13%;
+  padding-right: 13%;
   text-align: left;
 }
 
@@ -105,7 +105,7 @@ p.porify {
 }
 
 .text2 a:hover {
-  color: #f2f2f2;
+  color: #eeeeee;
   text-decoration: none;
 }
 
@@ -190,7 +190,7 @@ h1 span {
   transition: color 0.25s ease-out;
 }
 #dropdown > ul > li.has-sub > a {
-  padding-right: 32px;
+  padding-right: 40px;
 }
 /*Dropdown parent links give different colours when hovered*/
 #dropdown > ul > li:hover > a.lab {
@@ -271,7 +271,7 @@ h1 span {
   /*width: 170px;*/
   width: 100%; /*the width of the subelement of subheadings */
   border-bottom: 1px solid #eeeeee; /* horiz. line colour */
-  padding: 4px 10px;
+  padding: 4px 6px;
   font-size: 13px;
   font-weight: bold;
   color: #363638; /* colour of the drop down menu subheadings */
