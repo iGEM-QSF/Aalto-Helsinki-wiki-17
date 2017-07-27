@@ -51,8 +51,8 @@ p.porify {
     display: block; /* none: Hidden by default */
     width: 11%; 
     height: 11.93%;
-    top: 0; 
-    left: 0;
+    top: 10%; 
+    left: 5%;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0);
@@ -62,8 +62,8 @@ p.porify {
 
 .o {
   position: relative;
-  top: 110% !important;
-  left: 110% !important;
+  top: 0 !important;
+  left: 0 !important;
 }
 
 @font-face {
