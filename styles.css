@@ -88,16 +88,24 @@ p.porify {
   color: #ffffff;
 }
 
-.text2 a a:link a:visited {
+.text2 {
   left: 50%;
   width: 50%;
   float: right;
   font-size: 18px;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.text2 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .text2 a:hover {
   color: #f2f2f2;
+  text-decoration: none;
 }
 
 @font-face {
