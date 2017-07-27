@@ -81,7 +81,7 @@ p.porify {
 }
 
 .text1 {
-  width: 50%;
+  width: 60%; /*text closer to center*/
   float: left;
   text-align: center;
   font-weight: bolder;
@@ -91,7 +91,7 @@ p.porify {
 
 .text2 {
   left: 50%;
-  width: 50%;
+  width: 40%; /*so the text doesn't start immediately from 50% of page*/
   float: right;
   font-size: 18px;
   color: #ffffff;
@@ -102,6 +102,7 @@ p.porify {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 
 .text2 a:hover {
