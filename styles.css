@@ -15,7 +15,7 @@ header, body {
 }
 
 p {
-  text-align: left;
+  text-align: justify;
 }
 
 img {
@@ -35,6 +35,11 @@ img {
 .basictext {
   font-weight: lighter;
   line-height: 22px;
+}
+
+.introtext {
+  font-weight: normal;
+  line-height: 20px;
 }
 
 .some {
