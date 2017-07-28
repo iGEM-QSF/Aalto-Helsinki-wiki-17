@@ -15,9 +15,6 @@ header, body {
 }
 
 p {
-  padding-top: 1%;
-  padding-left: 13%;
-  padding-right: 13%;
   text-align: left;
 }
 
@@ -27,6 +24,12 @@ img {
     margin: auto;
     max-height: 100%;
     max-width: 100%;
+}
+
+.container {
+  padding-top: 1%;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 
 .some {
