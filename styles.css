@@ -150,6 +150,15 @@ p.porify {
   text-decoration: none;
 }
 
+.text2-hp {
+  left: 50%;
+  width: 40%; /*so the text doesn't start immediately from 50% of page*/
+  float: right;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .text2 a {
   font-weight: bold;
   color: #ffffff;
@@ -166,6 +175,11 @@ p.porify {
 }
 
 .text2 a:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.text2-hp a:hover {
   color: #eeeeee;
   text-decoration: none;
 }
