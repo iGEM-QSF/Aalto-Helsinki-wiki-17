@@ -110,12 +110,26 @@ p.porify {
   overflow: hidden;
 }
 
+#color-block-hp {
+  width: 100%;
+  top: 2%;
+  height: 20%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #CC6633;;
+  overflow: hidden;
+}
+
 #color-block:hover {
   background-color: #006666; /*on hover darker shade of same color*/
 }
 
 #color-block-mod:hover {
   background-color: #b88a2e; /*on hover darker shade of same color*/
+}
+
+#color-block-hp:hover {
+  background-color: #b85c2e; /*on hover darker shade of same color*/
 }
 
 .text1 {
