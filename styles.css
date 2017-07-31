@@ -113,7 +113,7 @@ p.porify {
 #color-block-hp {
   width: 100%;
   top: 2%;
-  height: 20%;
+  height: 10%;
   padding: 30px 0px;
   text-align: left;
   background-color: #CC6633;;
@@ -153,6 +153,14 @@ p.porify {
 .text2 a {
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.text2-hp a {
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 20px;
   text-decoration: none;
   display: block;
 }
