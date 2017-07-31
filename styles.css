@@ -103,6 +103,10 @@ p.porify {
   background-color: #006666; /*on hover darker shade of same color*/
 }
 
+#color-block-mod:hover {
+  background-color: #b88a2e; /*on hover darker shade of same color*/
+}
+
 .text1 {
   width: 60%; /*text closer to center*/
   float: left;
