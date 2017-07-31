@@ -20,12 +20,12 @@ p {
 
 a {
   text-decoration: none;
-  font-color: #000000;
+  color: #000000;
   font-weight: bold;
 }
 
 a:hover {
-  font-color: #363638;
+  color: #363638;
   font-weight: bolder;
 }
 
@@ -169,7 +169,7 @@ p.porify {
 .text2-hp a {
   font-weight: bold;
   color: #ffffff;
-  line-height: 20px;
+  line-height: 6px;
   text-decoration: none;
   display: block;
 }
