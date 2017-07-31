@@ -18,6 +18,17 @@ p {
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+  font-color: #000000;
+  font-weight: bold;
+}
+
+a:hover {
+  font-color: #363638;
+  font-weight: bolder;
+}
+
 img {
     padding: 0;
     display: block;
