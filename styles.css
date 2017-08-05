@@ -17,6 +17,7 @@ header, body {
 
 p {
   text-align: justify;
+  font-family: Work Sans;
 }
 
 a {
@@ -42,11 +43,13 @@ img {
   padding-top: 1%;
   padding-left: 13%;
   padding-right: 13%;
+  font-family: Work Sans;
 }
 
 .basictext {
   font-weight: lighter;
   line-height: 22px;
+  font-family: Work Sans;
 }
 
 .introtext {
