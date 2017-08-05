@@ -104,6 +104,10 @@ p.porify {
   font-family: Work Sans;
 }
 
+.quote-text:before {
+  content:”\201C”;
+}
+
 .quote-text {
   width: 65%;
   float: left;
