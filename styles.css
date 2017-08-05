@@ -110,6 +110,11 @@ q {
 
 q:before {
   content: open-quote;
+  font-size: 80px;
+}
+
+q:after {
+  content: no-close-quote;
 }
 
 .quote-text {
