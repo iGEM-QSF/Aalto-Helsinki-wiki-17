@@ -105,7 +105,7 @@ p.porify {
 }
 
 .quote-text {
-  width: 20%; /*text placement*/
+  width: 80%;
   float: left;
   text-align: center;
   font-weight: bolder;
