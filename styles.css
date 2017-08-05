@@ -104,7 +104,7 @@ p.porify {
   font-family: Work Sans;
 }
 
-.quote-text:before {
+.quote-text::before {
   content:”\201C”;
 }
 
