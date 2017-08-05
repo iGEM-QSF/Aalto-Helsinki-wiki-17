@@ -104,8 +104,12 @@ p.porify {
   font-family: Work Sans;
 }
 
-.quote-text::before {
-  content:”\201C”;
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before {
+  content: open-quote;
 }
 
 .quote-text {
