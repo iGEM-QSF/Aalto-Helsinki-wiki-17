@@ -48,13 +48,13 @@ img {
 
 .basictext {
   font-weight: lighter;
-  line-height: 22px;
+  line-height: 26px;
   font-family: Work Sans;
 }
 
 .introtext {
   font-weight: lighter;
-  line-height: 27px;
+  line-height: 32px;
 }
 
 .some {
@@ -101,6 +101,7 @@ p.porify {
   text-align: left;
   background-color: #CC9933;
   overflow: hidden;
+  font-family: Work Sans;
 }
 
 .q-start {
@@ -110,7 +111,7 @@ p.porify {
 .quote-text {
   width: 80%;
   float: left;
-  text-align: center;
+  text-align: left;
   font-weight: bolder;
   font-size: 30px;
   color: #000000;
