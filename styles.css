@@ -123,9 +123,10 @@ q:after {
   text-align: left;
   font-weight: bolder;
   font-size: 0px;
-  padding: 0 13%;
+  padding: 0 8%;
   color: #000000;
   margin-bottom:-100px;
+  margin-top:-30px;
 }
 
 .quote-text {
@@ -155,7 +156,7 @@ q:after {
   height: 20%;
   padding: 30px 0px;
   text-align: left;
-  background-color: #CC9933;;
+  background-color: #CC9933;
   overflow: hidden;
 }
 
@@ -171,7 +172,7 @@ q:after {
   height: 10%;
   padding: 30px 0px;
   text-align: left;
-  background-color: #CC6633;;
+  background-color: #CC6633;
   overflow: hidden;
 }
 
@@ -181,7 +182,7 @@ q:after {
   height: 10%;
   padding: 30px 0px;
   text-align: left;
-  background-color: #CC6633;;
+  background-color: #CC6633;
   overflow: hidden;
 }
 
