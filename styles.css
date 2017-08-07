@@ -158,7 +158,7 @@ q:after {
   overflow: hidden;
 }
 
-#color-block-container {
+.color-block-container {
   width: 100%;
   top: 2%;
   height: 100%;
