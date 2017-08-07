@@ -110,7 +110,7 @@ q {
 
 q:before {
   content: open-quote;
-  font-size: 130px;
+  font-size: 150px;
 }
 
 q:after {
@@ -118,23 +118,24 @@ q:after {
 }
 
 .quote-mark {
-  width: 4%;
+  width: 0%;
   float: left;
   text-align: left;
   font-weight: bolder;
-  font-size: 30px;
-  padding: 0 5%;
+  font-size: 0px;
+  padding: 0 13%;
   color: #000000;
+  margin-bottom:-100px;
 }
 
 .quote-text {
   /*left: 20%;*/
-  width: 75%;
-  float: right;
+  width: 70%;
+  /*float: right;*/
   text-align: left;
   font-weight: bolder;
   font-size: 30px;
-  padding: 0 10%;
+  padding: 0 15%;
   color: #000000;
 }
 
