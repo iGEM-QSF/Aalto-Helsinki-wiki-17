@@ -48,7 +48,7 @@ img {
 
 .basictext {
   font-weight: lighter;
-  line-height: 26px;
+  line-height: 32px;
   font-family: Work Sans;
 }
 
@@ -75,12 +75,11 @@ p.porify {
 }
 
 #roll-o {
-    position: fixed; /* Sit on top of the page content */
+    position: absolute; /* Sit on top of the page content */
     display: block; /* none: Hidden by default */
-    width: 11%; 
-    height: 11.93%;
-    top: 10%; 
-    left: 3%;
+    width: 6%; 
+    top: 5%; 
+    left: 9%;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0);
@@ -267,6 +266,15 @@ h2 span {
   color: #000000;
   padding: 10px;
   font-size: 80px;
+}
+
+h3 span {
+  color: #000000;
+  padding: 10px;
+  font-size: larger;
+  text-align: left;
+  text-shadow: 4px 2px gray;
+  text-shadow: 4px 2px rgba(0,0,0,0.5);
 }
 
 #dropdown {
