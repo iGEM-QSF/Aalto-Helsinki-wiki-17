@@ -158,9 +158,12 @@ q:after {
 }
 
 .color-block-container {
-  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  /*position: relative;
   width: 100%;
-  max-height: 80%;
+  max-height: 80%;*/
   background-color: #f36363;
 }
 
