@@ -168,10 +168,14 @@ q:after {
 }
 
 #color-block-hp {
-  width: 100%;
+  -webkit-flex: initial;
+  flex: initial;
+  height: 200px;
+  min-height: 100px;
+  /*width: 100%;
   top: 0%;
   height: 80%;
-  padding: 3% 0px;
+  padding: 3% 0px;*/
   text-align: left;
   background-color: #CC6633;
   overflow: hidden;
