@@ -170,7 +170,7 @@ q:after {
 #color-block-hp {
   -webkit-flex: initial;
   flex: initial;
-  height: 200px;
+  /*height: 200px;*/
   min-height: 100px;
   /*width: 100%;
   top: 0%;
@@ -206,6 +206,7 @@ q:after {
 .text1 {
   width: 60%; /*text closer to center*/
   float: left;
+  padding: 2% 0;
   text-align: center;
   font-weight: bolder;
   font-size: 30px;
@@ -222,7 +223,8 @@ q:after {
 }
 
 .text2-hp {
-  left: 50%;
+  /*left: 50%;*/
+  padding: 2% 0;
   width: 40%; /*so the text doesn't start immediately from 50% of page*/
   float: right;
   font-size: 16px;
