@@ -99,25 +99,45 @@ p.porify {
   top: 2%;
   padding: 30px 0px;
   text-align: left;
+  background-color: #339999;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+#quote-block-mod {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
   background-color: #CC9933;
   overflow: hidden;
   font-family: Work Sans;
 }
-
-#q-lab {
-  background-color: #339999 !important;
+#quote-block-hp {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #c63;
+  overflow: hidden;
+  font-family: Work Sans;
 }
-#q-mod {
-  background-color: #CC9933 !important;
+#quote-block-com {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #006699;
+  overflow: hidden;
+  font-family: Work Sans;
 }
-#q-hp {
-  background-color: #c63 !important;
-}
-#q-com {
-  background-color: #006699 !important;
-}
-#q-peo {
-  background-color: #336633 !important;
+#quote-block-peo {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #336633;
+  overflow: hidden;
+  font-family: Work Sans;
 }
 
 q {
