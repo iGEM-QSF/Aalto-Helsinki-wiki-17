@@ -141,7 +141,6 @@ q:after {
 #color-block {
   width: 100%;
   top: 2%;
-  height: 20%;
   padding: 30px 0px;
   text-align: left;
   background-color: #339999;
@@ -151,7 +150,6 @@ q:after {
 #color-block-mod {
   width: 100%;
   top: 2%;
-  height: 20%;
   padding: 30px 0px;
   text-align: left;
   background-color: #CC9933;
@@ -161,7 +159,6 @@ q:after {
 #color-block-com {
   width: 100%;
   top: 2%;
-  height: 20%;
   padding: 30px 0px;
   text-align: left;
   background-color: #006699;
@@ -224,7 +221,6 @@ q:after {
 #color-block-team {
   width: 100%;
   top: 2%;
-  height: 10%;
   padding: 30px 0px;
   text-align: left;
   background-color: #c63;
