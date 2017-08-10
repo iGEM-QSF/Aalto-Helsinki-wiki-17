@@ -105,19 +105,19 @@ p.porify {
 }
 
 #q-lab {
-  background-color: #339999;
+  background-color: #339999 !important;
 }
 #q-mod {
-  background-color: #CC9933;
+  background-color: #CC9933 !important;
 }
 #q-hp {
-  background-color: #c63;
+  background-color: #c63 !important;
 }
 #q-com {
-  background-color: #006699;
+  background-color: #006699 !important;
 }
 #q-peo {
-  background-color: #336633;
+  background-color: #336633 !important;
 }
 
 q {
