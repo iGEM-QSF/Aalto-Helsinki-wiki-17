@@ -264,9 +264,9 @@ q:after {
   /*overflow: hidden;*/
 }
 #color-block-team {
-  background: url("./img/1group-crop.jpg") no-repeat;
+  background: url("./img/1group-crop+.jpg") no-repeat;
   background-size: 100%;
-  height: 90%;
+  height: 55%;
   /*width: 100%;
   top: 2%;
   padding: 30px 0px;
