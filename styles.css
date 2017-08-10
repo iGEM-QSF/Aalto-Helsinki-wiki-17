@@ -374,6 +374,12 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  color: #000000;
+  font-size: 130%;
+  text-align: left;
+}
+
 #dropdown {
   position: relative;
   height: 24px;
