@@ -179,113 +179,109 @@ q:after {
   display: flex;
   flex-direction: column;
   /*position: relative;
-  width: 100%;*/
-  background-color: #ff3366;
-  > div {
-    flex: 1 1 auto;
-    display: flex;
-    > div {
-      flex: 1 1 auto;
-    }
-  }
+   width: 100%;*/
+  background-color: #f36;
 }
-
-.color-block-hp {
-  > div {
-    padding: 1rem;
-    &:nth-child(1) {
-      background-color: #CC6633;
-    }
-    &:nth-child(2) {
-      background-color: #CC6633;
-    }
-    &:nth-child(3) {
-      background-color: #CC6633;
-    } 
-  }
+.color-block-container > div {
+  flex: 1 1 auto;
+  display: flex;
 }
-
-.color-block-hp {
-  > div:hover {
-    padding: 1rem;
-    &:nth-child(1) {
-      background-color: #b85c2e; /*on hover darker shade of same color*/
-    }
-    &:nth-child(2) {
-      background-color: #b85c2e; /*on hover darker shade of same color*/
-    }
-    &:nth-child(3) {
-      background-color: #b85c2e; /*on hover darker shade of same color*/
-    }  
-  }
+.color-block-container > div > div {
+  flex: 1 1 auto;
 }
-
+.color-block-hp > div {
+  padding: 1rem;
+}
+.color-block-hp > div:nth-child(1) {
+  background-color: #c63;
+}
+.color-block-hp > div:nth-child(2) {
+  background-color: #c63;
+}
+.color-block-hp > div:nth-child(3) {
+  background-color: #c63;
+}
+.color-block-hp > div:hover {
+  padding: 1rem;
+}
+.color-block-hp > div:hover:nth-child(1) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+.color-block-hp > div:hover:nth-child(2) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+.color-block-hp > div:hover:nth-child(3) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
 #color-block-hp {
   /*height: 200px;*/
   /*min-height: 100px;*/
   /*width: 100%;
-  top: 0%;
-  height: 80%;
-  padding: 3% 0px;*/
+   top: 0%;
+   height: 80%;
+   padding: 3% 0px;*/
   text-align: left;
-  background-color: #CC6633;
+  background-color: #c63;
   /*overflow: hidden;*/
 }
-
 #color-block-team {
   width: 100%;
   top: 2%;
   height: 10%;
   padding: 30px 0px;
   text-align: left;
-  background-color: #CC6633;
+  background-color: #c63;
   overflow: hidden;
 }
-
 #color-block:hover {
-  background-color: #006666; /*on hover darker shade of same color*/
+  background-color: #066;
+  /*on hover darker shade of same color*/
 }
-
 #color-block-mod:hover {
-  background-color: #b88a2e; /*on hover darker shade of same color*/
+  background-color: #b88a2e;
+  /*on hover darker shade of same color*/
 }
-
 #color-block-hp:hover {
-  background-color: #b85c2e; /*on hover darker shade of same color*/
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
 }
-
 #color-block-com:hover {
-  background-color: #003366; /*on hover darker shade of same color*/
+  background-color: #036;
+  /*on hover darker shade of same color*/
 }
-
 .text1 {
-  width: 60%; /*text closer to center*/
+  width: 60%;
+  /*text closer to center*/
   float: left;
   padding: 2% 0;
   text-align: center;
   font-weight: bolder;
   font-size: 30px;
-  color: #ffffff;
+  color: #fff;
 }
-
 .text2 {
   left: 50%;
-  width: 40%; /*so the text doesn't start immediately from 50% of page*/
+  width: 40%;
+  /*so the text doesn't start immediately from 50% of page*/
   float: right;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
-
 .text2-hp {
   /*left: 50%;*/
   /*padding: 2% 0;*/
-  width: 40%; /*so the text doesn't start immediately from 50% of page*/
+  width: 40%;
+  /*so the text doesn't start immediately from 50% of page*/
   /*float: right;
-  font-size: 16px;
-  color: #ffffff;*/
+   font-size: 16px;
+   color: #ffffff;*/
   text-decoration: none;
-  display: flex; /*The links will flex in the vertical direction*/
+  display: flex;
+  /*The links will flex in the vertical direction*/
   flex-direction: column;
   justify-content: center;
 }
