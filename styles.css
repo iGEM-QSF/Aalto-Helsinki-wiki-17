@@ -104,6 +104,22 @@ p.porify {
   font-family: Work Sans;
 }
 
+#q-lab {
+  background-color: #339999;
+}
+#q-mod {
+  background-color: #CC9933;
+}
+#q-hp {
+  background-color: #c63;
+}
+#q-com {
+  background-color: #006699;
+}
+#q-peo {
+  background-color: #336633;
+}
+
 q {
   quotes: "“" "”" "‘" "’";
 }
