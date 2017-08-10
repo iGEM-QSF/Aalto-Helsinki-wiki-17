@@ -169,7 +169,7 @@ q:after {
 }
 
 .color-block-container {
-  min-height: 100%;
+  min-height: 68%; /*fills the remaining space of the page*/
   display: flex;
   flex-direction: column;
   /*position: relative;
@@ -269,6 +269,7 @@ q:after {
   /*left: 50%;*/
   /*padding: 2% 0;*/
   width: 40%;
+  text-align: left;
   /*so the text doesn't start immediately from 50% of page*/
   /*float: right;
    font-size: 16px;
@@ -505,6 +506,15 @@ h3 {
 
 footer .footer-social {
   position: static;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  bottom: 0;
+  background-color: #339999;
+  overflow: hidden;
+}
+footer .mainpage {
+  position: absolute;
   width: 100%;
   text-align: center;
   padding: 5px 0;
