@@ -534,6 +534,43 @@ footer .footer-social a:hover {
   font-weight: bold;
 }
 
+/*Footer for main page*/
+
+footer .footer-mainpage {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  bottom: 0;
+  background-color: #339999;
+  overflow: hidden;
+}
+
+footer .footer-mainpage ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-mainpage ul li {
+  display: inline-block;
+}
+footer .footer-mainpage ul li a {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+}
+footer .footer-mainpage ul li a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
+footer .footer-mainpage a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
 footer .texts ul a {
   font-weight: bold;
   text-decoration: none;
