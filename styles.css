@@ -515,7 +515,7 @@ h4 {
 }
 /*Specifies how the link opened by hovering dropdown looks*/
 #dropdown ul ul li:hover > ul {
-  left: 180px; /* how far from the dropdown menu the submenu opens */
+  left: 175px; /* how far from the dropdown menu the submenu opens */
   top: 0;
   opacity: 1;
 }
