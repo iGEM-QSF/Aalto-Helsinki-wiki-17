@@ -135,33 +135,37 @@ Molecular dynamics is based on numerical, step-by-step, evaluation of Newton’s
 <h3>More on Integrators</h3>
 <div class="basictext">
 <p>
-Numerical integration of Newton’s equations of motion aims to find an expression that defines the positions \(\textbf{r}_i(t+\Delta t)\) based on already known positions \(\textbf{r}_i(t)\) at time \(t\). For this integration, the Verlet formula, derived from taylor expansions for the positions $\textbf{r}_i(t)$, is often used due to its simplicity and stability. All of the most commonly used integrators are time reversible, meaning that the direction of the simulation time is arbitrary. In the event that the signs of the velocities of all atoms were swapped, the simulation would run exactly in the reverse direction. Velocities can be subsequently calculated from the positions or produced explicitly using leapfrog of velocity Verlet schemes. In theory, the exact MD trajectory is defined using an infinitesimally small time step $\Delta t$. In practice, however, larger values $\Delta t$ are used to enable examination of longer timescales. The value of $\Delta t$ is determined by the speed of the motions of the system as well as the examined properties. Due to the commonly high vibrational frequencies of intramolecular bonds, it is common to treat bonds as having a fixed length by introducing constraints.
+Numerical integration of Newton’s equations of motion aims to find an expression that defines the positions \(\textbf{r}_i(t+\Delta t)\) based on already known positions \(\textbf{r}_i(t)\) at time \(t\). For this integration, the Verlet formula, derived from taylor expansions for the positions \(\textbf{r}_i(t)\), is often used due to its simplicity and stability. All of the most commonly used integrators are time reversible, meaning that the direction of the simulation time is arbitrary. In the event that the signs of the velocities of all atoms were swapped, the simulation would run exactly in the reverse direction. Velocities can be subsequently calculated from the positions or produced explicitly using leapfrog of velocity Verlet schemes. In theory, the exact MD trajectory is defined using an infinitesimally small time step \(\Delta t\). In practice, however, larger values \(\Delta t\) are used to enable examination of longer timescales. The value of \(\Delta t\) is determined by the speed of the motions of the system as well as the examined properties. Due to the commonly high vibrational frequencies of intramolecular bonds, it is common to treat bonds as having a fixed length by introducing constraints.
 <br>
 <br>
 </p>
 </div>
-</div>
 
-<div id="quote-block-mod">
-<div class="quote-mark"><q></q></div>
-<div class="quote-text">A good sailor knows everything is always changing. But so does a Buddhist monk - so would monks be good sailors?</div>
-<div class="quote-person">Good Sailor</div>
-</div>
-
-<div class="container">
 <h3>On Evaluating Dynamic Properties</h3>
 <div class="basictext">
 <p>
 In statistical mechanics, physical properties of a system can be represented by averaging over microscopic states of the examined system, that are distributed according to the statistical ensemble. Examples of statistical mechanics ensembles include the microcanonical ensemble, in which only the states corresponding to a specific energy have a chance of occurring, and the canonical ensemble, where temperature remains constant but energy can be exchanged with the surroundings. In the case of a canonical ensemble, the probability of states is given by the Boltzmann function. Dependence upon Newtonian dynamics implies the conservation of energy and MD trajectories provide configurations distributed according to the microcanonical ensemble. In practice, however, energy is not entirely conserved, even in the case of a microcanonical ensemble, due to accumulation of errors from the numerical integration. MD can be generalized to sample other statistical ensembles, such as the canonical ensemble through introduction of coupling to a heat bath. MD trajectories may be analyzed to provide time averaged properties of the system. Theoretically, assuming an infinite simulations time, these averages converge to the true value of the examined thermodynamic property. However, in practice, the quality of sampling is limited by computation time and may be especially poor for processes that exceed the timescale of typical MD simulations.
 </p>
 </div>
+
 <div class="basictext">
 <h3>On Force Fields</h3>
 <p>
 Choosing an appropriate energy functions for describing the intramolecular and intermolecular interactions in a system is paramount for a successful MD simulation. Nonbonded interactions tend to be described by a simple, pairwise additive function, accounting only for nuclear coordinates as justified by the Born-Oppenheimer approximation. For bonded interactions, simple two-body, three-body, and four-body terms are used to describe the formation of bonds, angles and dihedrals. The many parameters of energy functions are generally obtained from experimental studies or quantum mechanical calculations of molecules and their fragments.
 </p>
+</div>
+</div>
+
+<div id="quote-block-mod">
+<div class="quote-mark"><q></q></div>
+<div class="quote-text">United-atom force fields, such as the GROMOS force field family, often treat a carbon and its associated hydrogens as one interaction center.</div>
+<div class="quote-person"></div>
+</div>
+
+<div class="container">
+<div class="basictext">
 <p>
-The energy functions and their associated parameters together define a forcefield. The choice of force field for an MD simulation depends upon the system as well as the desired level of abstraction. All-atom force fields provide parameters for every single atom in the system. United-atom force fields, such as the GROMOS force field family, often treat a carbon and its associated hydrogens as one interaction center. Coarse-grained force fields offer a more abstract representation alternative for long timescale simulation of macromolecules, such as proteins and lipids, and large systems by providing a rougher description the particles in the systems. ((An example of a coarse-grained force field is the MARTINI force field. The MARTINI forcefield generally uses a four-to-one mapping, meaning that four heavy atoms and their associated hydrogens are mapped as one interaction center.))
+The energy functions and their associated parameters together define a forcefield. The choice of force field for an MD simulation depends upon the system as well as the desired level of abstraction. All-atom force fields provide parameters for every single atom in the system. United-atom force fields, such as the GROMOS force field family, often treat a carbon and its associated hydrogens as one interaction center. Coarse-grained force fields offer a more abstract representation alternative for long timescale simulation of macromolecules, such as proteins and lipids, and large systems by providing a rougher description the particles in the systems. ((An example of a coarse-grained force field is the <b>MARTINI</b> force field. The MARTINI forcefield generally uses a four-to-one mapping, meaning that four heavy atoms and their associated hydrogens are mapped as one interaction center.))
 </p>
 </div>
 
@@ -178,7 +182,7 @@ Periodic boundary conditions can be useful for examining behavior of macroscale 
 <h3>GROMOS Force Field Family</h3>
 <div class="basictext">
 <p>
-In most of the MD simulations incorporated into our project, we use the GROMOS53A6 force field parameter set. GROMOS53A6 is considered a united-tom force field, which maps a carbon and its associated hydrogens as one interaction center. The parametrization of the forcefield is based on accurate reproduction of free enthalpies of hydration and apolar solvation of a wide range of compounds. The relative free enthalpy of solvation between apolar and polar environments is an important property in many biological phenomena, including protein folding and membrane formation. GROMOS53A6 is the parameter set of choice for simulating biomolecules in explicit solvent. For setting up, running, and analyzing our simulations, we utilize the GROMACS v.4.6.7 simulation package. 
+In most of the MD simulations incorporated into our project, we use the <b>GROMOS53A6</b> force field parameter set. GROMOS53A6 is considered a united-tom force field, which maps a carbon and its associated hydrogens as one interaction center. The parametrization of the forcefield is based on accurate reproduction of free enthalpies of hydration and apolar solvation of a wide range of compounds. The relative free enthalpy of solvation between apolar and polar environments is an important property in many biological phenomena, including protein folding and membrane formation. GROMOS53A6 is the parameter set of choice for simulating biomolecules in explicit solvent. For setting up, running, and analyzing our simulations, we utilize the <b>GROMACS v.4.6.7</b> simulation package. 
 </p>
 </div>
 
