@@ -21,7 +21,7 @@ $('#dropdown').prepend('');
         var w = element.width();
         if ($(this).hasClass('has-sub'))
         {
-        	leftPos = element.position().left + w/2 - 8;
+        	leftPos = element.position().left + w/2 - 4;
         }
         else {
         	leftPos = element.position().left + w/2 - 6;
