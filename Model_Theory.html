@@ -153,6 +153,9 @@ In statistical mechanics, physical properties of a system can be represented by 
 <p>
 Choosing an appropriate energy functions for describing the intramolecular and intermolecular interactions in a system is paramount for a successful MD simulation. Nonbonded interactions tend to be described by a simple, pairwise additive function, accounting only for nuclear coordinates as justified by the Born-Oppenheimer approximation. For bonded interactions, simple two-body, three-body, and four-body terms are used to describe the formation of bonds, angles and dihedrals. The many parameters of energy functions are generally obtained from experimental studies or quantum mechanical calculations of molecules and their fragments.
 </p>
+<p>
+The energy functions and their associated parameters together define a forcefield. The choice of force field for an MD simulation depends upon the system as well as the desired level of abstraction. All-atom force fields provide parameters for every single atom in the system. United-atom force fields, such as the GROMOS force field family, often treat a carbon and its associated hydrogens as one interaction center. Coarse-grained force fields offer a more abstract representation alternative for long timescale simulation of macromolecules, such as proteins and lipids, and large systems by providing a rougher description the particles in the systems. ((An example of a coarse-grained force field is the <b>MARTINI</b> force field. The MARTINI forcefield generally uses a four-to-one mapping, meaning that four heavy atoms and their associated hydrogens are mapped as one interaction center.))
+</p>
 </div>
 </div>
 
@@ -163,12 +166,6 @@ Choosing an appropriate energy functions for describing the intramolecular and i
 </div>
 
 <div class="container">
-<div class="basictext">
-<p>
-The energy functions and their associated parameters together define a forcefield. The choice of force field for an MD simulation depends upon the system as well as the desired level of abstraction. All-atom force fields provide parameters for every single atom in the system. United-atom force fields, such as the GROMOS force field family, often treat a carbon and its associated hydrogens as one interaction center. Coarse-grained force fields offer a more abstract representation alternative for long timescale simulation of macromolecules, such as proteins and lipids, and large systems by providing a rougher description the particles in the systems. ((An example of a coarse-grained force field is the <b>MARTINI</b> force field. The MARTINI forcefield generally uses a four-to-one mapping, meaning that four heavy atoms and their associated hydrogens are mapped as one interaction center.))
-</p>
-</div>
-
 <h3>On Enforcement of Periodic Boundary Conditions</h3>
 <div class="basictext">
 <p>
