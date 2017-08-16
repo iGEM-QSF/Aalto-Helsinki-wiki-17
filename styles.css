@@ -40,6 +40,55 @@ img {
     max-width: 100%;
 }
 
+/* Site Map styles */
+.sitemap {
+  background-color: #339999;
+}
+
+#map-column-styles {
+  clear:left;
+  float:left;
+  width:100%;
+  overflow:hidden;
+  background:#339999;
+}
+#map-column-1 {
+  float:left;
+  width:16%;
+  position:relative;
+  left:82%;
+  overflow:hidden;
+}
+#map-column-2 {
+  float:left;
+  width:16%;
+  position:relative;
+  left:86%;
+  overflow:hidden;
+}
+#map-column-3 {
+  float:left;
+  width:16%;
+  position:relative;
+  left:90%;
+  overflow:hidden;
+}
+#map-column-4 {
+  float:left;
+  width:16%;
+  position:relative;
+  left:94%;
+  overflow:hidden;
+}
+#map-column-5 {
+  float:left;
+  width:16%;
+  position:relative;
+  left:98%;
+  overflow:hidden;
+}
+
+/* Normal page styles */
 .container {
   padding-top: 1%;
   padding-left: 13%;
