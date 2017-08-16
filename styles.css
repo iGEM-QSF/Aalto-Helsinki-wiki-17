@@ -43,6 +43,7 @@ img {
 /* Site Map styles */
 .sitemap {
   background-color: #339999;
+  color: #ffffff;
 }
 
 #map-column-styles {
@@ -59,11 +60,27 @@ img {
   left:8%;
   overflow:hidden;
 }
+#map-column-1 ul {
+  list-style: none;
+  float:left;
+  width:14%;
+  position:relative;
+  left:8%;
+  overflow:hidden;
+}
 #map-column-2 {
   float:left;
   width:14%;
   position:relative;
   left:12%;
+  overflow:hidden;
+}
+#map-column-2 ul {
+  list-style: none;
+  float:left;
+  width:14%;
+  position:relative;
+  left:8%;
   overflow:hidden;
 }
 #map-column-3 {
@@ -73,6 +90,14 @@ img {
   left:16%;
   overflow:hidden;
 }
+#map-column-3 ul {
+  list-style: none;
+  float:left;
+  width:14%;
+  position:relative;
+  left:8%;
+  overflow:hidden;
+}
 #map-column-4 {
   float:left;
   width:14%;
@@ -80,11 +105,27 @@ img {
   left:20%;
   overflow:hidden;
 }
+#map-column-4 ul {
+  list-style: none;
+  float:left;
+  width:14%;
+  position:relative;
+  left:8%;
+  overflow:hidden;
+}
 #map-column-5 {
   float:left;
   width:14%;
   position:relative;
   left:24%;
+  overflow:hidden;
+}
+#map-column-5 ul {
+  list-style: none;
+  float:left;
+  width:14%;
+  position:relative;
+  left:8%;
   overflow:hidden;
 }
 
@@ -427,6 +468,12 @@ h3 {
 
 h4 {
   color: #000000;
+  font-size: 130%;
+  text-align: left;
+}
+
+h5 {
+  color: #ffffff;
   font-size: 130%;
   text-align: left;
 }
