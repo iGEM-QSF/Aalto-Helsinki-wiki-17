@@ -49,6 +49,7 @@ img {
 #map-column-styles {
   clear:left;
   float:left;
+  text-align: left;
   width:100%;
   overflow:hidden;
   background:#339999;
