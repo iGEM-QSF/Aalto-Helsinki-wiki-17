@@ -54,37 +54,37 @@ img {
 }
 #map-column-1 {
   float:left;
-  width:16%;
+  width:14%;
   position:relative;
-  left:82%;
+  left:8%;
   overflow:hidden;
 }
 #map-column-2 {
   float:left;
-  width:16%;
+  width:14%;
   position:relative;
-  left:86%;
+  left:12%;
   overflow:hidden;
 }
 #map-column-3 {
   float:left;
-  width:16%;
+  width:14%;
   position:relative;
-  left:90%;
+  left:16%;
   overflow:hidden;
 }
 #map-column-4 {
   float:left;
-  width:16%;
+  width:14%;
   position:relative;
-  left:94%;
+  left:20%;
   overflow:hidden;
 }
 #map-column-5 {
   float:left;
-  width:16%;
+  width:14%;
   position:relative;
-  left:98%;
+  left:24%;
   overflow:hidden;
 }
 
