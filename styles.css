@@ -64,7 +64,9 @@ img {
 #map-column-1 a {
   list-style: none;
   color: #ffffff;
-  overflow:hidden;
+}
+#map-column-1 a:hover {
+  color: #066;
 }
 #map-column-2 {
   float:left;
@@ -76,7 +78,9 @@ img {
 #map-column-2 a {
   list-style: none;
   color: #ffffff;
-  overflow:hidden;
+}
+#map-column-2 a:hover {
+  color: #066;
 }
 #map-column-3 {
   float:left;
@@ -88,7 +92,9 @@ img {
 #map-column-3 a {
   list-style: none;
   color: #ffffff;
-  overflow:hidden;
+}
+#map-column-3 a:hover {
+  color: #066;
 }
 #map-column-4 {
   float:left;
@@ -100,7 +106,9 @@ img {
 #map-column-4 a {
   list-style: none;
   color: #ffffff;
-  overflow:hidden;
+}
+#map-column-4 a:hover {
+  color: #066;
 }
 #map-column-5 {
   float:left;
@@ -112,7 +120,9 @@ img {
 #map-column-5 a {
   list-style: none;
   color: #ffffff;
-  overflow:hidden;
+}
+#map-column-5 a:hover {
+  color: #066;
 }
 
 /* Normal page styles */
