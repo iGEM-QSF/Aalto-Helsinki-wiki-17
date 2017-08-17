@@ -56,7 +56,7 @@ img {
 }
 #map-column-1 {
   float:left;
-  width:16%;
+  min-width:16%;
   position:relative;
   left:10%;
   overflow:hidden;
@@ -68,7 +68,7 @@ img {
 }
 #map-column-2 {
   float:left;
-  width:16%;
+  min-width:16%;
   position:relative;
   left:10%;
   overflow:hidden;
@@ -80,7 +80,7 @@ img {
 }
 #map-column-3 {
   float:left;
-  width:16%;
+  min-width:16%;
   position:relative;
   left:10%;
   overflow:hidden;
@@ -92,7 +92,7 @@ img {
 }
 #map-column-4 {
   float:left;
-  width:16%;
+  min-width:16%;
   position:relative;
   left:10%;
   overflow:hidden;
@@ -104,7 +104,7 @@ img {
 }
 #map-column-5 {
   float:left;
-  width:16%;
+  min-width:16%;
   position:relative;
   left:10%;
   overflow:hidden;
