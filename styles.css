@@ -76,7 +76,7 @@ img {
   left:10%;
   overflow:hidden;
 }
-#map-column-2 ul {
+#map-column-2 a {
   list-style: none;
   float:left;
   width:16%;
@@ -91,7 +91,7 @@ img {
   left:10%;
   overflow:hidden;
 }
-#map-column-3 ul {
+#map-column-3 a {
   list-style: none;
   float:left;
   width:16%;
@@ -106,7 +106,7 @@ img {
   left:10%;
   overflow:hidden;
 }
-#map-column-4 ul {
+#map-column-4 a {
   list-style: none;
   float:left;
   width:16%;
@@ -121,7 +121,7 @@ img {
   left:10%;
   overflow:hidden;
 }
-#map-column-5 ul {
+#map-column-5 a {
   list-style: none;
   float:left;
   width:16%;
