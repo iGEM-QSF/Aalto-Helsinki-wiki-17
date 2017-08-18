@@ -297,13 +297,15 @@ q:after {
   overflow: hidden;
 }
 #parts-text {
-  left: 10%;
+  padding: 1% 13%;
+  color: #ffffff;
   width: 20%;
   float: left;
   text-align: justify;
   overflow: hidden;
 }
 #parts-photo {
+  padding: 1% 13%;
   float: right;
   left: 40%;
   width: 20%;
