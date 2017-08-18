@@ -299,10 +299,12 @@ q:after {
 #parts-text {
   left: 10%;
   width: 20%;
+  float: left;
   text-align: justify;
   overflow: hidden;
 }
 #parts-photo {
+  float: right;
   left: 40%;
   width: 20%;
 }
