@@ -145,6 +145,29 @@ img {
   line-height: 32px;
 }
 
+/* Team page styles */
+
+.person-wrap {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 15%;
+  padding-right: 13.5%;
+  font-family: Work Sans;
+}
+.person-photo {
+  padding: 0 0 0 0;
+  float: left;
+  width: 15%;
+}
+.person-texts {
+  float: right;
+  width: 30%;
+  font-weight: lighter;
+  line-height: 28px;
+  font-family: Work Sans;
+}
+
+/* Icons and porifi styles */
 .some {
   display: inline-block;
   width: 30px;
