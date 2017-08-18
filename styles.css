@@ -53,6 +53,7 @@ img {
   width:100%;
   overflow:hidden;
   background:#339999;
+  font-size: 14px;
 }
 #map-column-1 {
   float:left;
