@@ -296,6 +296,16 @@ q:after {
   background-color: #006699;
   overflow: hidden;
 }
+#parts-text {
+  left: 10%;
+  width: 20%;
+  text-align: justify;
+  overflow: hidden;
+}
+#parts-photo {
+  left: 40%;
+  width: 20%;
+}
 
 .color-block-container {
   min-height: 68%; /*fills the remaining space of the page*/
