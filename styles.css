@@ -422,11 +422,12 @@ div span {
     display: block;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    background: rgba(0,0,0,.5);
+    opacity: 0.5;
+    background: #000000;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition: all 1s;
+    z-index: ;
 }
 
 div:hover span {
