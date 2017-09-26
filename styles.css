@@ -303,6 +303,7 @@ q:after {
   text-align: left;
   background-image: url("./img/Laboratory.jpg");
   background-size: cover;
+  /*background-position: center center; maybe???*/
   background-color: #339999;
   overflow: hidden;
 }
