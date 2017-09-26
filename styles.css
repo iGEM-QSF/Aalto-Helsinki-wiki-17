@@ -329,6 +329,7 @@ q:after {
   background-color: #006699;
   overflow: hidden;
 }
+
 #parts-text {
   padding: 1% 0% 1% 13%;
   color: #ffffff;
@@ -416,6 +417,22 @@ q:after {
   background-color: #c63;
   overflow: hidden;*/
 }
+
+div span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+div:hover span {
+    opacity: 1;
+}
+
 #color-block:hover {
   background-color: #066;
   /*on hover darker shade of same color*/
