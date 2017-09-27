@@ -324,7 +324,7 @@ q:after {
   top: 2%;
   padding: 30px 0px;
   text-align: left;
-  background-image: url("./img/Community.jpg");
+  background-image: url("./img/Community new.jpg");
   background-size: cover;
   background-color: #006699;
   overflow: hidden;
@@ -367,16 +367,19 @@ q:after {
   background-image: url("./img/Project.jpg");
   background-size: cover;
   background-color: #c63;
+  border: 2px solid white;
 }
 .color-block-hp > div:nth-child(2) {
-  background-image: url("./img/Public outreach.jpg");
+  background-image: url("./img/Public outreach wide.jpg");
   background-size: cover;
   background-color: #c63;
+  border: 2px solid white;
 }
 .color-block-hp > div:nth-child(3) {
   background-image: url("./img/judging.jpg");
   background-size: cover;
   background-color: #c63;
+  border: 2px solid white;
 }
 .color-block-hp > div:hover {
   padding: 1rem;
