@@ -40,6 +40,17 @@ img {
     max-width: 100%;
 }
 
+/* Front page */
+#front-page {
+  width: 100%;
+  top: 32%;
+  padding: 0px 0px;
+  background-image: url("./img/kansikuva.jpg");
+  background-size: cover;
+  /*background-position: center center; maybe???*/
+  /*overflow: hidden;*/
+}
+
 /* Site Map styles */
 .sitemap {
   background-color: #339999;
