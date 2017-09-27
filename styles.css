@@ -48,7 +48,7 @@ img {
   background-image: url("./img/kansikuva.jpg");
   background-size: cover;
   /*background-position: center center; maybe???*/
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 /* Site Map styles */
