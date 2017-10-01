@@ -1,0 +1,1045 @@
+<html>
+
+<script>
+( function( $ ) {
+$( document ).ready(function() {
+$('#dropdown').prepend('');
+    var activeElement = $('#dropdown>ul>li:first');
+
+    $('#dropdown>ul>li').each(function() {
+        if ($(this).hasClass('active')) {
+            activeElement = $(this);
+        }
+    });
+
+	var posLeft = activeElement.position().left;
+	var elementWidth = activeElement.width();
+	posLeft = posLeft + elementWidth/2 -6;
+	if (activeElement.hasClass('has-sub')) {
+		posLeft -= 6;
+	}
+	
+	$("#dropdown>ul>li").hover(function() {
+        element = $(this);
+        var w = element.width();
+        if ($(this).hasClass('has-sub'))
+        {
+        	leftPos = element.position().left + w/2 - 12;
+        }
+        else {
+        	leftPos = element.position().left + w/2 - 6;
+        };
+
+// rotating porifi while hovering on headings
+    //$("img[alt^='Porifi']").width(150).height(150);
+        //hover(function() {
+        //$(this).replaceWith('<img src='../Aalto-Helsinki-wiki/Porifi-lab.png'>');
+        //$("img[alt^='Porifi']").replaceWith('<img src='../Aalto-Helsinki-wiki/Porifi-lab.png'>');
+    //});
+
+	$('#dropdown>ul').prepend('<li id="menu-button"><a>Menu</a></li>');
+	$( "#menu-button" ).click(function(){
+    		if ($(this).parent().hasClass('open')) {
+    			$(this).parent().removeClass('open');
+    		}
+    		else {
+    			$(this).parent().addClass('open');
+    		}
+    	});
+});
+
+    //$(".porify").width(150).height(150);
+    //$("img[alt^='Porifi']").width(150).height(150);
+
+} )( jQuery );
+
+</script>
+
+<style>
+
+html {
+    position: relative;
+    height: 100%;
+    min-width: 950px;
+    text-align: center;
+    background-color: white;
+    background-size: cover;
+  -webkit-font-smoothing: antialiased; /* font smoothing */
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', Work Sans; font-size:16px;
+}
+
+header, body {
+    height: 100%;
+    margin: 0 0 35px;
+    padding: 0;
+}
+
+p {
+  text-align: justify;
+  font-family: Work Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #363638;
+  font-weight: bolder;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Site Map styles */
+.sitemap {
+  background-color: #339999;
+  color: #ffffff;
+}
+
+#map-column-styles {
+  clear:left;
+  float:left;
+  text-align: left;
+  width:100%;
+  overflow:hidden;
+  background:#339999;
+  font-size: 14px;
+}
+#map-column-1 {
+  float:left;
+  min-width:16%;
+  position:relative;
+  left:14%;
+  overflow:hidden;
+}
+#map-column-1 a {
+  list-style: none;
+  color: #ffffff;
+}
+#map-column-1 a:hover {
+  color: #066;
+}
+#map-column-2 {
+  float:left;
+  min-width:16%;
+  position:relative;
+  left:14%;
+  overflow:hidden;
+}
+#map-column-2 a {
+  list-style: none;
+  color: #ffffff;
+}
+#map-column-2 a:hover {
+  color: #066;
+}
+#map-column-3 {
+  float:left;
+  min-width:16%;
+  position:relative;
+  left:14%;
+  overflow:hidden;
+}
+#map-column-3 a {
+  list-style: none;
+  color: #ffffff;
+}
+#map-column-3 a:hover {
+  color: #066;
+}
+#map-column-4 {
+  float:left;
+  min-width:16%;
+  position:relative;
+  left:14%;
+  overflow:hidden;
+}
+#map-column-4 a {
+  list-style: none;
+  color: #ffffff;
+}
+#map-column-4 a:hover {
+  color: #066;
+}
+#map-column-5 {
+  float:left;
+  min-width:16%;
+  position:relative;
+  left:14%;
+  overflow:hidden;
+}
+#map-column-5 a {
+  list-style: none;
+  color: #ffffff;
+}
+#map-column-5 a:hover {
+  color: #066;
+}
+
+/* Normal page styles */
+.container {
+  padding-top: 1%;
+  padding-left: 13%;
+  padding-right: 13%;
+  font-family: Work Sans;
+}
+
+.basictext {
+  font-weight: lighter;
+  line-height: 32px;
+  font-family: Work Sans;
+}
+
+.introtext {
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+/* Team page styles */
+
+.person-wrap {
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 0.5%;
+  font-family: Work Sans;
+}
+.person-photo {
+  padding: 2% 0 2% 0;
+  float: left;
+  width: 25%;
+}
+.person-texts {
+  float: right;
+  width: 68%;
+  font-weight: lighter;
+  line-height: 28px;
+  font-family: Work Sans;
+  text-align: justify;
+  margin-right: 2%;
+}
+
+/* Icons and porifi styles */
+.some {
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.some:hover {
+  content: url('https://igem-qsf.github.io/Aalto-Helsinki-wiki-17/logos-icons/home_icon_hover.png');
+}
+
+p.porify {
+  padding-top: 6%;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+#roll-o {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* none: Hidden by default */
+    width: 6%; 
+    top: 5%; 
+    left: 9%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: default;
+}
+
+.o {
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+#quote-block {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #339999;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+#quote-block-mod {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #CC9933;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+#quote-block-hp {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #c63;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+#quote-block-com {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #006699;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+#quote-block-peo {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #336633;
+  overflow: hidden;
+  font-family: Work Sans;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before {
+  content: open-quote;
+  font-size: 150px;
+}
+
+q:after {
+  content: no-close-quote;
+}
+
+.quote-mark {
+  width: 0%;
+  float: left;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 0px;
+  padding: 0 8%;
+  color: #000000;
+  margin-bottom:-100px;
+  margin-top:-40px;
+}
+
+.quote-text {
+  width: 70%;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 0 18%;
+  color: #000000;
+}
+
+.quote-person {
+  width: 69%;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 25px;
+  padding: 0 18%;
+  color: #000000;
+}
+
+#color-block {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #339999;
+  overflow: hidden;
+}
+
+#color-block-mod {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #CC9933;
+  overflow: hidden;
+}
+
+#color-block-com {
+  width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #006699;
+  overflow: hidden;
+}
+#parts-text {
+  padding: 1% 0% 1% 13%;
+  color: #ffffff;
+  width: 46%;
+  float: left;
+  text-align: justify;
+  font-weight: bold;
+  overflow: hidden;
+}
+#parts-photo {
+  padding: 1% 13% 1% 5%;
+  float: right;
+  width: 23%;
+}
+
+.color-block-container {
+  min-height: 68%; /*fills the remaining space of the page*/
+  display: flex;
+  flex-direction: column;
+  /*position: relative;
+   width: 100%;*/
+  background-color: #f36;
+}
+.color-block-container > div {
+  flex: 1 1 auto;
+  display: flex;
+}
+.color-block-container > div > div {
+  flex: 1 1 auto;
+}
+.color-block-hp > div {
+  padding: 1rem;
+}
+.color-block-hp > div:nth-child(1) {
+  background-color: #c63;
+}
+.color-block-hp > div:nth-child(2) {
+  background-color: #c63;
+}
+.color-block-hp > div:nth-child(3) {
+  background-color: #c63;
+}
+.color-block-hp > div:hover {
+  padding: 1rem;
+}
+.color-block-hp > div:hover:nth-child(1) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+.color-block-hp > div:hover:nth-child(2) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+.color-block-hp > div:hover:nth-child(3) {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+#color-block-hp {
+  /*height: 200px;*/
+  /*min-height: 100px;*/
+  /*width: 100%;
+   top: 0%;
+   height: 80%;
+   padding: 3% 0px;*/
+  text-align: left;
+  background-color: #c63;
+  /*overflow: hidden;*/
+}
+#color-block-team {
+  /*scroll effect: background: url("./img/1group crop+.jpg") no-repeat center center fixed;*/
+  background: url("./img/1group crop+.jpg") no-repeat center center; /* attention, no dash */
+  /*background-size: 100%;*/
+  background-size: cover;
+  height: 55%;
+  /*width: 100%;
+  top: 2%;
+  padding: 30px 0px;
+  text-align: left;
+  background-color: #c63;
+  overflow: hidden;*/
+}
+#color-block:hover {
+  background-color: #066;
+  /*on hover darker shade of same color*/
+}
+#color-block-mod:hover {
+  background-color: #b88a2e;
+  /*on hover darker shade of same color*/
+}
+#color-block-hp:hover {
+  background-color: #b85c2e;
+  /*on hover darker shade of same color*/
+}
+#color-block-com:hover {
+  background-color: #036;
+  /*on hover darker shade of same color*/
+}
+.text1 {
+  width: 60%;
+  /*text closer to center*/
+  float: left;
+  padding: 2% 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #fff;
+}
+.text2 {
+  left: 50%;
+  width: 40%;
+  /*so the text doesn't start immediately from 50% of page*/
+  float: right;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.text2-hp {
+  /*left: 50%;*/
+  /*padding: 2% 0;*/
+  width: 40%;
+  text-align: left;
+  /*so the text doesn't start immediately from 50% of page*/
+  /*float: right;
+   font-size: 16px;
+   color: #ffffff;*/
+  text-decoration: none;
+  display: flex;
+  /*The links will flex in the vertical direction*/
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text2 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.text2-hp a {
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.text2 a:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.text2-hp a:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(Adam.otf);
+}
+
+h1 {
+  color: #000000;
+  padding: 10px;
+  font-size: 250%;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  color: #000000;
+  padding: 10px;
+  font-size: 80px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 200%;
+  text-align: left;
+}
+
+h4 {
+  color: #000000;
+  font-size: 130%;
+  text-align: left;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 130%;
+  text-align: left;
+}
+
+#dropdown {
+  position: relative;
+  height: 24px;
+  background: #ffffff;
+  width: auto;
+}
+#dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: auto; /*this was 0*/
+  /*text-align: center; this was added*/
+  line-height: 1;
+}
+#dropdown > ul {
+  position: relative;
+  display: block;
+  text-align: center; /*test, this was added*/
+  background: #ffffff; /*This is the heading1 background*/
+  width: 100%;
+  z-index: 500;
+}
+#dropdown:after,
+#dropdown > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#dropdown.align-right > ul > li {
+  float: right;
+}
+#dropdown.align-center ul {
+  text-align: center;
+}
+#dropdown.align-center ul ul {
+  text-align: center; /*this was left*/
+}
+#dropdown > ul > li {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#dropdown > ul > #menu-button {
+  display: none;
+}
+#dropdown ul li a {
+  display: block;
+  font-family: 'Quicksand', Work Sans;
+  src: url(Adam.otf);
+  font-weight: bold;
+  text-decoration: none;
+}
+#dropdown > ul > li > a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* this was added */
+  padding: 5px 45px; /* heading sizes */
+  color: #363638; /*previous color #7a8189;*/
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+#dropdown > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+/*Dropdown parent links give different colours when hovered*/
+#dropdown > ul > li:hover > a.lab {
+  color: #339999;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.mod {
+  color: #CC9933;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.hp {
+  color: #CC6633;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.com {
+  color: #336699;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown > ul > li:hover > a.peo {
+  color: #336633;
+  border-bottom: 3px solid currentColor;
+}
+#dropdown li.has-sub::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#dropdown ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .25s ease;
+  -moz-transition: opacity .3s ease, top .25s ease;
+  -ms-transition: opacity .3s ease, top .25s ease;
+  -o-transition: opacity .3s ease, top .25s ease;
+  transition: opacity .3s ease, top .25s ease;
+  z-index: 1000;
+}
+#dropdown ul ul ul {
+  top: 37px;
+  padding-left: 5px;
+}
+#dropdown ul ul li {
+  position: relative;
+}
+/* This defines how much space between heading and drop down menu */
+#dropdown > ul > li:hover > ul {
+  width: 95%; /* this makes the dropdown menus widths 100% */
+  left: auto;
+  right: auto;
+  top: 31px; /*this was 44px -> too far away, 31px is right under */
+  opacity: 1;
+}
+#dropdown.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+  opacity: 1;
+}
+/*Specifies how the link opened by hovering dropdown looks*/
+#dropdown ul ul li:hover > ul {
+  left: 175px; /* how far from the dropdown menu the submenu opens */
+  top: 0;
+  opacity: 1;
+}
+#dropdown.align-right ul ul li:hover > ul {
+  left: auto;
+  /*right: 170px;*/
+  width: 100%; /*added*/
+  top: 0;
+  opacity: 1;
+  padding-right: 5px;
+}
+#dropdown ul ul li a {
+  /*width: 170px;*/
+  width: 100%; /*the width of the subelement of subheadings */
+  border-bottom: 1px solid #eeeeee; /* horiz. line colour */
+  padding: 4px 2.6%;
+  font-size: 13px;
+  font-weight: bold;
+  color: #363638; /* colour of the drop down menu subheadings */
+  background: #ffffff;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#dropdown.align-right ul ul li a {
+  text-align: center; /* this was right prev. */
+}
+
+#dropdown ul ul li:hover > a {
+  background: #f2f2f2; /* colour of dropdown menu links when hovered - light grey */
+  color: #363638;
+}
+
+#dropdown ul ul li:last-child > a,
+#dropdown ul ul li.last > a {
+  border-bottom: 0;
+}
+
+footer .footer-social {
+  position: static;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  bottom: 0;
+  background-color: #339999;
+  overflow: hidden;
+}
+footer .footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-social ul li {
+  display: inline-block;
+}
+footer .footer-social ul li a {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+}
+footer .footer-social ul li a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
+footer .footer-social a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
+/*Footer for main page*/
+
+footer .footer-mainpage {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  bottom: 0;
+  background-color: #339999;
+  overflow: hidden;
+}
+
+footer .footer-mainpage ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-mainpage ul li {
+  display: inline-block;
+}
+footer .footer-mainpage ul li a {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+}
+footer .footer-mainpage ul li a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
+footer .footer-mainpage a:hover {
+  color: #363638 !important;
+  font-weight: bold;
+}
+
+footer .texts ul a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 30px;
+}
+
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #dropdown {
+    width: auto;
+  }
+  #dropdown.align-center ul {
+    text-align: center; /* this was left */
+  }
+  #dropdown.align-right > ul > li {
+    float: none;
+  }
+  #dropdown ul {
+    width: auto;
+  }
+  #dropdown .submenuArrow,
+  #dropdown #indicatorContainer {
+    display: none;
+  }
+  #dropdown > ul {
+    height: auto;
+    display: block;
+  }
+  #dropdown > ul > li {
+    float: none;
+  }
+  #dropdown li,
+  #dropdown > ul > li {
+    display: none;
+  }
+  #dropdown ul ul,
+  #dropdown ul ul ul,
+  #dropdown ul > li:hover > ul,
+  #dropdown ul ul > li:hover > ul,
+  #dropdown.align-right ul ul,
+  #dropdown.align-right ul ul ul,
+  #dropdown.align-right ul > li:hover > ul,
+  #dropdown.align-right ul ul > li:hover > ul {
+    position: relative;
+    width: 100%; /*added*/
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    right: auto;
+  }
+  #dropdown ul .has-sub::after {
+    display: none;
+  }
+  #dropdown ul li a {
+    padding: 12px 20px;
+  }
+  #dropdown ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 28px 35px;
+  }
+  #dropdown.align-right ul ul li a {
+    text-align: center; /*this was left*/
+  }
+  #dropdown ul ul li:hover > a.lab > a.mod {
+    background: none;
+    color: #363638;
+  }
+  #dropdown ul ul ul a {
+    padding: 8px 50px;
+  }
+  #dropdown ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #dropdown ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #dropdown ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #dropdown > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+  }
+  #dropdown #menu-button > a {
+    padding: 14px 20px;
+  }
+  #dropdown ul.open li,
+  #dropdown > ul.open > li {
+    display: block;
+  }
+  #dropdown > ul.open > li#menu-button > a {
+    color: #fff;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  }
+  #dropdown ul ul::after {
+    display: none;
+  }
+  #dropdown #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    border-bottom: 2px solid #7a8189;
+    right: 20px;
+    top: 0px; /* this was 15px */
+  }
+  #dropdown #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    right: 20px;
+    top: 0px; /*this was 25px*/
+  }
+  #dropdown ul.open #menu-button::after,
+  #dropdown ul.open #menu-button::before {
+    border-color: #fff;
+  }
+}
+
+</style>
+
+<head> 
+
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://2017.igem.org/Template:Aalto-Helsinki">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <!--MathJax hosted by iGEM-->
+   <script src="http://2017.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <!--Vector social media icons provided by Pixeden-->
+   <link rel="stylesheet" href="./pe-icon-social/css/pe-icon-social.css">
+   <link rel="stylesheet" href="./pe-icon-social/css/helper.css">
+
+    <!-- Quicksand font -->
+    <link href='//fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!-- Work Sans font -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+
+   <title>Aalto-Helsinki</title>
+
+</head>
+
+<body>
+<br>
+<br>
+<img src="http://2017.igem.org/wiki/images/6/68/T--Aalto-Helsinki--mainlogo.png"><br>
+<br>
+<!-- DROPDOWN MENU -->
+<div id='dropdown'>
+<ul>
+   <li class='active has-sub'><a class='lab' href='../Aalto-Helsinki-wiki-17/Laboratory.html'>Laboratory</a>
+      <ul>
+         <li class='has-sub'>
+            <li><a href="../Aalto-Helsinki-wiki-17/Laboratory.html">Overview</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Laboratory_Theory">Theoretical Background</a></li>
+            <li class='has-sub'><a href="http://2017.igem.org/Team:Aalto-Helsinki/Laboratory_Methods">Materials and Methods</a>
+                <ul>
+                    <li class='last'><a href="http://2017.igem.org/Team:Aalto-Helsinki/Protocols">Protocols</a></li>
+                </ul>
+            </li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Laboratory_Results">Results and Discussion</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Laboratory_Future">Future Prospectives</a></li>
+         </li>
+      </ul>
+   </li>
+   <li class='active has-sub'><a class='mod' href='../Aalto-Helsinki-wiki-17/Model.html'>Modeling</a>
+      <ul>
+         <li class='has-sub'>
+         <li><a href="../Aalto-Helsinki-wiki-17/Model.html">Overview</a></li>
+         <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Model_Theory">Theoretical Background</a></li>
+         <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Model_Setup">Simulation Setup</a></li>
+         <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Model_Results">Results and Discussion</a></li>
+         </li>
+      </ul>
+   </li>
+
+   <li class='active has-sub'><a class='hp' href='../Aalto-Helsinki-wiki-17/HP.html'>Human Practices</a>
+      <ul>
+         <li class='has-sub'>
+            <li><a href="../Aalto-Helsinki-wiki-17/HP.html">Overview</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/HP/Story">Story</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/HP/Education">Education</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/HP/Gold_Integrated">Integrated Human Practices</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Engagement">Sweat Challenge</a></li>
+         </li>
+      </ul>
+   </li>
+
+   <li class='active has-sub'><a class='com' href='../Aalto-Helsinki-wiki-17/Community.html'>Community</a>
+      <ul>
+         <li class='has-sub'>
+            <li><a href="../Aalto-Helsinki-wiki-17/Community.html">Overview</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Parts">Parts</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Interlab">Interlab</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Collaborations">Collaborations</a></li>
+         </li>
+      </ul>
+   </li>
+
+   <li class='active has-sub'><a class='peo' href='../Aalto-Helsinki-wiki-17/Team.html'>People</a>
+      <ul>
+         <li class='has-sub'>
+            <li><a href="../Aalto-Helsinki-wiki-17/Team.html">Team Members</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Advisors">Advisors</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Attributions">Attributions</a></li>
+            <li><a href="http://2017.igem.org/Team:Aalto-Helsinki/Sponsors">Sponsors</a></li>
+         </li>
+      </ul>
+   </li>
+</ul>
+</div>
