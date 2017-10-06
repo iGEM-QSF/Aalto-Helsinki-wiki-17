@@ -366,7 +366,7 @@ q:after {
   flex-direction: column;
   /*position: relative;
    width: 100%;*/
-  background-color: #f36;
+  background-color: #ffffff;
 }
 .color-block-container > div {
   flex: 1 1 auto;
@@ -519,6 +519,7 @@ div:hover span {
 }
 
 .text2-hp a {
+  flex: 1 1 auto;
   font-weight: bold;
   color: #ffffff;
   line-height: 6px;
