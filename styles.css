@@ -7,7 +7,8 @@ html {
     background-size: cover;
   -webkit-font-smoothing: antialiased; /* font smoothing */
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Quicksand', Work Sans; font-size:16px;
+  font-family: 'Quicksand', Work Sans !important; 
+  font-size:16px;
 }
 
 header, body {
@@ -525,10 +526,16 @@ div:hover span {
 }
 
 @font-face {
-  font-family: Quicksand;
-  src: url(Adam.otf);
+  font-family: Quicksand !important;
 }
 
+#o-h1 {
+  color: #000000;
+  padding: 10px;
+  font-size: 250%;
+  text-align: center;
+  font-weight: normal;
+}
 h1 {
   color: #000000;
   padding: 10px;
