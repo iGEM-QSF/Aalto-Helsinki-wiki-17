@@ -48,7 +48,6 @@ img {
   padding: 0px 0px;
   background-image: url("./img/cover picture 2.jpg");
   background-size: cover;
-  /*background-position: center center;*/
   overflow: hidden;
 }
 
@@ -359,6 +358,10 @@ q:after {
 
 .color-block-container {
   min-height: 68%; /*fills the remaining space of the page*/
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   /*position: relative;
@@ -367,6 +370,10 @@ q:after {
 }
 .color-block-container > div {
   flex: 1 1 auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
 }
 .color-block-container > div > div {
@@ -494,6 +501,10 @@ div:hover span {
    font-size: 16px;
    color: #ffffff;*/
   text-decoration: none;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   /*The links will flex in the vertical direction*/
   flex-direction: column;
