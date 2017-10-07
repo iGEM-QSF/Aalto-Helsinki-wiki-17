@@ -51,10 +51,8 @@ img {
 /* Front page */
 #front-page {
   width: 100%;
+  min-height: 58%;
   padding: 0px 0px;
-  background-image: url("./img/cover picture 2.jpg");
-  background-size: cover;
-  overflow: hidden;
   
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -63,8 +61,20 @@ img {
   display: flex;
   flex-direction: column;
 }
+#front-page-block {
+  flex: 1 1 auto;
+  background-image: url("./img/cover picture 2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+}
 
-#front-page > p {
+#front-page-block > p {
   flex: 1 1 auto;
 }
 
