@@ -43,7 +43,7 @@ img {
 
 #mainlogo {
   background-image: url("./Aalto-Helsinki-wiki.png");
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
