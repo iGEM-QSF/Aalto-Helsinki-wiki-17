@@ -64,8 +64,10 @@ img {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
 }
+
+.color-block-container > p {
+  flex: 1 1 auto;
 
 /* Site Map styles */
 .sitemap {
