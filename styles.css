@@ -41,6 +41,12 @@ img {
     max-width: 100%;
 }
 
+#mainlogo {
+  background-image: url("./Aalto-Helsinki-wiki.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
 /* Front page */
 #front-page {
   width: 100%;
@@ -839,7 +845,7 @@ footer .texts ul a {
     width: auto;
   }
   #dropdown.align-center ul {
-    text-align: center; /* this was left */
+    text-align: left;
   }
   #dropdown.align-right > ul > li {
     float: none;
@@ -871,7 +877,7 @@ footer .texts ul a {
   #dropdown.align-right ul > li:hover > ul,
   #dropdown.align-right ul ul > li:hover > ul {
     position: relative;
-    width: 100%; /*added*/
+    /*width: 100%; added*/
     left: auto;
     top: auto;
     opacity: 1;
@@ -892,7 +898,7 @@ footer .texts ul a {
     padding: 28px 35px;
   }
   #dropdown.align-right ul ul li a {
-    text-align: center; /*this was left*/
+    text-align: left; /*this was left*/
   }
   #dropdown ul ul li:hover > a.lab > a.mod {
     background: none;
@@ -953,4 +959,16 @@ footer .texts ul a {
   #dropdown ul.open #menu-button::before {
     border-color: #fff;
   }
+
+  footer .footer-social ul li a {
+    font-size: 12px;
+  }
+
+  #mainlogo {
+    background-image: url("./Aalto-Helsinki-wiki-mobile.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+
 }
