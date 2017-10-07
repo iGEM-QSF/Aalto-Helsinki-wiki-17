@@ -51,13 +51,11 @@ img {
 /* Front page */
 #front-page {
   width: 100%;
-  top: 32%;
   padding: 0px 0px;
   background-image: url("./img/cover picture 2.jpg");
   background-size: cover;
   overflow: hidden;
   
-  min-height: 53%; /*fills the remaining space of the page*/
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -66,7 +64,7 @@ img {
   flex-direction: column;
 }
 
-.color-block-container > p {
+#front-page > p {
   flex: 1 1 auto;
 }
 
