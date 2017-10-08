@@ -83,7 +83,7 @@ img {
 /* Front page */
 .front-page {
   width: 100%;
-  min-height: 58%;
+  min-height: 67%;
   padding: 0px 0px; 
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -101,7 +101,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-.front-page > div > p {
+.front-page > div > div {
   flex: 1 1 auto;
 }
 .front-page > div:nth-child(1) {
@@ -110,6 +110,13 @@ img {
   /*overflow: hidden;*/
   background-color: #c63;
   border: 2px solid white;
+}
+.porify {
+  flex: 1 1 auto;
+  padding-top: 6%;
+  text-align: center;
+  width: 40%;
+  margin: auto;
 }
 
 /* Site Map styles */
@@ -251,13 +258,6 @@ img {
 
 .some:hover {
   content: url('https://igem-qsf.github.io/Aalto-Helsinki-wiki-17/logos-icons/home_icon_hover.png');
-}
-
-p.porify {
-  padding-top: 6%;
-  text-align: center;
-  width: 30%;
-  margin: auto;
 }
 
 #roll-o {
