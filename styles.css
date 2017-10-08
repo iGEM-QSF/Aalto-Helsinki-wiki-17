@@ -48,12 +48,43 @@ img {
   background-position: center center;
 }
 
+/**/
+.color-block-container > div {
+  flex: 1 1 auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+}
+.color-block-container > div > div {
+  flex: 1 1 auto;
+}
+.color-block-hp > div:nth-child(1) {
+  background-image: url("./img/Project.jpg");
+  background-size: cover;
+  background-color: #c63;
+  border: 2px solid white;
+}
+.color-block-hp > div:nth-child(2) {
+  background-image: url("./img/Public outreach wide.jpg");
+  background-size: cover;
+  background-color: #c63;
+  border: 2px solid white;
+}
+.color-block-hp > div:nth-child(3) {
+  background-image: url("./img/judging.jpg");
+  background-size: cover;
+  background-color: #c63;
+  border: 2px solid white;
+}
+/**/
+
 /* Front page */
 #front-page {
   width: 100%;
   min-height: 58%;
-  padding: 0px 0px;
-  
+  padding: 0px 0px; 
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -61,11 +92,8 @@ img {
   display: flex;
   flex-direction: column;
 }
-#front-page-block {
+#front-page > div {
   flex: 1 1 auto;
-  /*background-image: url("./img/cover picture 2.jpg");
-  background-size: cover;*/
-  overflow: hidden;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -73,9 +101,15 @@ img {
   display: flex;
   flex-direction: column;
 }
-
-#front-page-block > p {
+#front-page > div > p {
   flex: 1 1 auto;
+}
+#front-page > div:nth-child(1) {
+  background-image: url("./img/cover picture 2.jpg");
+  background-size: cover;
+  /*overflow: hidden;*/
+  background-color: #c63;
+  border: 2px solid white;
 }
 
 /* Site Map styles */
