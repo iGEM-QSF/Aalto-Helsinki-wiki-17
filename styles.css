@@ -81,7 +81,7 @@ img {
 /**/
 
 /* Front page */
-#front-page {
+.front-page {
   width: 100%;
   min-height: 58%;
   padding: 0px 0px; 
@@ -92,7 +92,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-#front-page > div {
+.front-page > div {
   flex: 1 1 auto;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -101,10 +101,10 @@ img {
   display: flex;
   flex-direction: column;
 }
-#front-page > div > p {
+.front-page > div > p {
   flex: 1 1 auto;
 }
-#front-page > div:nth-child(1) {
+.front-page > div:nth-child(1) {
   background-image: url("./img/cover picture 2.jpg");
   background-size: cover;
   /*overflow: hidden;*/
@@ -554,7 +554,7 @@ div:hover span {
 }
 .text2-hp {
   /*left: 50%;*/
-  /*padding: 2% 0;*/
+  padding: 2% 0;
   width: 40%;
   text-align: left;
   /*so the text doesn't start immediately from 50% of page*/
