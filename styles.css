@@ -142,6 +142,9 @@ article.sponsor span {
   height: 100%;
   width: 1px;
 }
+article.sponsor.last {
+  margin-right: 0px;
+}
 
 /* Site Map styles */
 .sitemap {
