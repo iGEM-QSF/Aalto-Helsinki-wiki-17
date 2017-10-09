@@ -119,6 +119,11 @@ img {
   margin: auto;
 }
 
+.sponsors-style {
+  max-height: 10%;
+  padding: 1% 1%;
+}
+
 /* Site Map styles */
 .sitemap {
   background-color: #339999;
