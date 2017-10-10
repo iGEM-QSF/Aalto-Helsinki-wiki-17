@@ -48,38 +48,6 @@ img {
   background-position: center center;
 }
 
-/**/
-.color-block-container > div {
-  flex: 1 1 auto;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
-}
-.color-block-container > div > div {
-  flex: 1 1 auto;
-}
-.color-block-hp > div:nth-child(1) {
-  background-image: url("./img/Project.jpg");
-  background-size: cover;
-  background-color: #c63;
-  border: 2px solid white;
-}
-.color-block-hp > div:nth-child(2) {
-  background-image: url("./img/Public outreach wide.jpg");
-  background-size: cover;
-  background-color: #c63;
-  border: 2px solid white;
-}
-.color-block-hp > div:nth-child(3) {
-  background-image: url("./img/judging.jpg");
-  background-size: cover;
-  background-color: #c63;
-  border: 2px solid white;
-}
-/**/
-
 /* Front page */
 .front-page {
   width: 100%;
@@ -100,7 +68,7 @@ img {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 7% 10% 10% 10%;
 }
 .front-page > div > div {
   flex: 1 1 auto;
@@ -276,7 +244,7 @@ article.sponsor.last {
   margin-right: 2%;
 }
 
-/* Icons and porifi styles */
+/* Some icon styles */
 .some {
   display: inline-block;
   width: 30px;
@@ -306,6 +274,7 @@ article.sponsor.last {
   left: 0 !important;
 }
 
+/* Quote styles */
 #quote-block {
   width: 100%;
   top: 2%;
@@ -395,6 +364,7 @@ q:after {
   color: #000000;
 }
 
+/* Color block styles */
 #color-block {
   width: 100%;
   top: 2%;
@@ -625,6 +595,7 @@ div:hover span {
   text-decoration: none;
 }
 
+/* Headings etc. */
 @font-face {
   font-family: Quicksand !important;
 }
@@ -668,6 +639,7 @@ h5 {
   text-align: left;
 }
 
+/* Dropdown menu styles */
 #dropdown {
   position: relative;
   height: 24px;
@@ -842,6 +814,7 @@ h5 {
   border-bottom: 0;
 }
 
+/* Footer styles */
 footer .footer-social {
   position: static;
   width: 100%;
