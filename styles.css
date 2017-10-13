@@ -87,6 +87,7 @@ img {
   margin: auto;
 }
 
+/* Sponsors */
 article.sponsor {
   float: left;
   display: table-cell;
@@ -100,6 +101,9 @@ article.sponsor {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  -webkit-filter:  grayscale(80%); /*brightness(60%) contrast(10000000%);*/
+  filter: grayscale(80%);
+  /*opacity: .3;*/
 }
 article.sponsor * {
   vertical-align: middle;
@@ -112,6 +116,9 @@ article.sponsor span {
 }
 article.sponsor.last {
   margin-right: 0px;
+}
+article.sponsor a:hover {
+    -webkit-filter:  grayscale(0%);
 }
 
 /* Site Map styles */
