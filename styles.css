@@ -118,7 +118,7 @@ article.sponsor span {
 article.sponsor.last {
   margin-right: 0px;
 }
-.sponsor img:hover {
+article.sponsor:hover {
     -webkit-filter:  grayscale(0%);
     filter: grayscale(0%);
     opacity: 1.0;
