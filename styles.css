@@ -70,9 +70,10 @@ img {
   flex-direction: column;
   padding: 7% 10% 10% 10%;
 }
+/* Not needed
 .front-page > div > div {
   flex: 1 1 auto;
-}
+}*/
 .front-page > div:nth-child(1) {
   background-image: url("./img/cover picture 2.jpg");
   background-size: cover;
@@ -81,7 +82,7 @@ img {
   border: 2px solid white;
 }
 .porify {
-  flex: 1 1 auto;
+  /*flex: 1 1 auto; not needed*/
   text-align: center;
   width: 35%;
   margin: auto;
