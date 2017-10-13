@@ -103,7 +103,7 @@ article.sponsor {
           border-radius: 3px;
   -webkit-filter:  grayscale(80%); /*brightness(60%) contrast(10000000%);*/
   filter: grayscale(80%);
-  /*opacity: .3;*/
+  opacity: .8;
 }
 article.sponsor * {
   vertical-align: middle;
@@ -117,9 +117,10 @@ article.sponsor span {
 article.sponsor.last {
   margin-right: 0px;
 }
-article.sponsor a:hover {
+article.sponsor img:hover {
     -webkit-filter:  grayscale(0%);
     filter: grayscale(0%);
+    opacity: 1.0;
 }
 
 /* Site Map styles */
