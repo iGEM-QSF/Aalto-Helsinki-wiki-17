@@ -525,20 +525,24 @@ div:hover span {
 }
 
 #color-block:hover {
-  background-color: #066;
-  /*on hover darker shade of same color*/
+  /*background-color: #066;*/
+  -webkit-filter:  grayscale(10%) brightness(85%);
+  filter: grayscale(10%) brightness(85%);
 }
 #color-block-mod:hover {
-  background-color: #b88a2e;
-  /*on hover darker shade of same color*/
+  /*background-color: #b88a2e;*/
+  -webkit-filter:  grayscale(10%) brightness(85%);
+  filter: grayscale(10%) brightness(85%);
 }
 #color-block-hp:hover {
-  background-color: #b85c2e;
-  /*on hover darker shade of same color*/
+  /*background-color: #b85c2e;*/
+  -webkit-filter:  grayscale(10%) brightness(85%);
+  filter: grayscale(10%) brightness(85%);
 }
 #color-block-com:hover {
-  background-color: #036;
-  /*on hover darker shade of same color*/
+  /*background-color: #036;*/
+  -webkit-filter:  grayscale(10%) brightness(85%);
+  filter: grayscale(10%) brightness(85%);
 }
 .text1 {
   width: 60%;
